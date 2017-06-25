@@ -20,11 +20,11 @@ import java.io.IOException;
 {
     private OnTaskCompletedListener onTaskCompletedListener;
     private static MyApi myApiService = null;
-    private Context context;
+    private String context;
 
 
 
-    JokerClient(OnTaskCompletedListener listener,Context context) {
+    JokerClient(OnTaskCompletedListener listener,String context) {
         this.onTaskCompletedListener = listener;
         this.context  = context;
     }
@@ -37,7 +37,7 @@ import java.io.IOException;
                     // options for running against local devappserver
                     // - 10.0.2.2 is localhost's IP address in Android emulator
                     // - turn off compression when running against local devappserver
-                    .setRootUrl("http://"+context.getResources().getString(R.string.server_ip)+":8080/_ah/api/")
+                    .setRootUrl("http://"+context+":8080/_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {

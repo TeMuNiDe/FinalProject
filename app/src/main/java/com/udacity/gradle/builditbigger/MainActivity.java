@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements JokerClient.OnTas
     }
 
     public void tellJoke(View view) {
-       new JokerClient(this,this).execute();
+       new JokerClient(this,getResources().getString(R.string.server_ip)).execute();
     }
 
 

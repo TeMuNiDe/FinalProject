@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class JokerClientTest
+public class JokerClientTetst
 {
 
     JokerClient client = new JokerClient(new JokerClient.OnTaskCompletedListener() {
@@ -17,7 +17,7 @@ public class JokerClientTest
         public void onTaskCompleted(String result) {
             Log.d("result_from_task",result);
         }
-    }, InstrumentationRegistry.getContext());
+    },"192.168.43.176");
     @Test
     public void jokerClientTest() throws Exception
     {
