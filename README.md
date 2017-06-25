@@ -1,3 +1,23 @@
+> Important !!!
+> REPLACE [YOUR_IP] located at [app/src/main/res/values/strings.xml](https://github.com/TeMuNiDe/FinalProject/blob/master/app/src/main/res/values/strings.xml) with the IP address of your PC before deploying app
+> 
+>
+The IP address of your PC can be found by follwing the steps [here](https://kb.wisc.edu/page.php?id=4273)  
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 # Gradle for Android and Java Final Project
 
 In this project, you will create an app with multiple flavors that uses
