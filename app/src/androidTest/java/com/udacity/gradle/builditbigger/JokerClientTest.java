@@ -1,5 +1,6 @@
 package com.udacity.gradle.builditbigger;
 
+import android.support.test.InstrumentationRegistry;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -10,12 +11,13 @@ import java.util.concurrent.TimeUnit;
 
 public class JokerClientTest
 {
+
     JokerClient client = new JokerClient(new JokerClient.OnTaskCompletedListener() {
         @Override
         public void onTaskCompleted(String result) {
             Log.d("result_from_task",result);
         }
-    });
+    }, InstrumentationRegistry.getContext());
     @Test
     public void jokerClientTest() throws Exception
     {
