@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class JokerClientTetst
+public class JokerClientTest
 {
 
     JokerClient client = new JokerClient(new JokerClient.OnTaskCompletedListener() {
